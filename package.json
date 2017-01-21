@@ -1,11 +1,35 @@
 {
-  "name": "todoList-mean-app",
+  "name": "todolist-mean-app",
   "version": "1.0.0",
   "description": "Todo list app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "Antonio Regadas",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "mongojs": "^2.4.0",
+    "morgan": "^1.7.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zone-live/Todo-MEAN_2.git"
+  },
+  "keywords": [
+    "angularjs2",
+    "nodejs",
+    "mongo"
+  ],
+  "bugs": {
+    "url": "https://github.com/zone-live/Todo-MEAN_2/issues"
+  },
+  "homepage": "https://github.com/zone-live/Todo-MEAN_2#readme"
 }
