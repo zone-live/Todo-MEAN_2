@@ -3,10 +3,12 @@ var path = require('path');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
- 
+
+//Define routes filesJS path
 var index = require('./routes/index');
 var todos = require('./routes/todos');
  
+ //Init app
 var app = express();
  
 // view engine setup
@@ -23,6 +25,7 @@ app.use(bodyParser.urlencoded({
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
  
+// Define / to index and api (any name I want!) path to get todos
 app.use('/', index);
 app.use('/api/v1/', todos);
  
@@ -33,10 +36,11 @@ app.use(function(req, res, next) {
     next(err);
 });
  
+// tell server to listen in port 3000 
 var server = app.listen(3000, function() {
     var host = 'localhost';
     var port = server.address().port;
-    console.log('App listening at http://%s:%s', host, port);
+    console.log('App listening at the awesome port of http://%s:%s', host, port);
 });
  
 module.exports = app;

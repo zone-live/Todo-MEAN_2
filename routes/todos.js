@@ -1,7 +1,9 @@
 var express = require('express');
 var router = express.Router();
 var mongojs = require('mongojs');
- mongodb://<dbuser>:<dbpassword>@ds031857.mlab.com:31857/angular
+
+
+
 /* GET All Todos */
 router.get('/todos', function(req, res, next) {
     db.todos.find(function(err, todos) {
