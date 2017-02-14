@@ -1,0 +1,25 @@
+{
+  "name": "todolist-mean-app",
+  "description": "Todo list app",
+  "main": "index.js",
+  "authors": [
+    "Antonio Regadas"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angularjs2",
+    "nodejs",
+    "mongo"
+  ],
+  "homepage": "https://github.com/zone-live/Todo-MEAN_2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
