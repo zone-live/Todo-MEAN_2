@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mongojs = require('mongojs');
-
+var db = mongojs('mongodb://admin_user:abc123@ds117199.mlab.com:17199/mean2_todos', ['todos']);
 
 
 /* GET All Todos */
