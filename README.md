@@ -1,7 +1,8 @@
 # Todo MEAN2 App
 
 ## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm run build serve` for a node and angular server on the same port. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+check Package json for this command instructions.
 
 ## Code scaffolding
 
