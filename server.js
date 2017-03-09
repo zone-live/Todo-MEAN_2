@@ -5,14 +5,7 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var tasks = require('./routes/tasks');
 
-//var port = 3000;
-
 var app = express();
-
-//View Engine
-//app.set('views', path.join(__dirname, 'index'));
-//app.set('view engine', 'ejs');
-//app.engine('html', require('ejs').renderFile);
 
 // Set static folder
 app.use(express.static(path.join(__dirname, 'dist')));
